@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lists",
+  "info": {
+    "name": "list",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "task": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "due_date": {
+      "type": "datetime",
+      "required": true
+    },
+    "points": {
+      "type": "integer"
+    },
+    "finished": {
+      "type": "boolean"
+    },
+    "done": {
+      "type": "boolean"
+    }
+  }
+}
